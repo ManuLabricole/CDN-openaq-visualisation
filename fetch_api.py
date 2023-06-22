@@ -63,5 +63,5 @@ def fetch_data_from_api(country_list:list, pollutants_list:list, days_to_fetch:3
                 else:
                     print(f"Failed to fetch data for country {country} and pollutant {pollutant} after 5 retries.")
                     
-    save_df_to_csv(df, f"df_pages_{max_page}")
+    save_df_to_csv(df, f"df_pages_{max_page}.csv")
             
